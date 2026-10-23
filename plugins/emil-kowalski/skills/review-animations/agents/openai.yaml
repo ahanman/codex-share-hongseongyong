@@ -1,0 +1,5 @@
+interface:
+  display_name: "Review Animations"
+  short_description: "Review interface motion against Emil Kowalski's standards."
+policy:
+  allow_implicit_invocation: false

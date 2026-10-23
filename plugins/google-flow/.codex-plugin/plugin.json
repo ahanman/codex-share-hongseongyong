@@ -1,0 +1,25 @@
+{
+  "name": "google-flow",
+  "version": "0.1.0",
+  "description": "Personal Google Flow browser workflow using Codex's connected browser tools.",
+  "author": {
+    "name": "Personal integration"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Google Flow (Browser)",
+    "shortDescription": "Use Google Flow through your connected browser.",
+    "longDescription": "A personal browser-workflow skill for Google Flow. Uses the connected Chrome/browser tools or an available Playwright MCP session. This is not an official Google plugin and does not provide a dedicated Google Flow MCP/API server.",
+    "developerName": "Personal integration",
+    "category": "Creativity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://flow.google.com/",
+    "defaultPrompt": [
+      "Use Google Flow to create a video.",
+      "Open my Google Flow project."
+    ]
+  }
+}

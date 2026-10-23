@@ -1,0 +1,32 @@
+{
+  "name": "emil-kowalski",
+  "version": "0.1.0",
+  "description": "Personal Codex bundle of Emil Kowalski's 13 official design and animation skills.",
+  "author": {
+    "name": "Personal bundle; upstream skills by Emil Kowalski"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Emil Kowalski Design Skills",
+    "shortDescription": "Design interfaces and animations with 13 official skills.",
+    "longDescription": "A personal Codex wrapper around the skills with compatible Codex invocation metadata from emilkowalski/skills. Includes design engineering, web and Expo animation, motion review, UI prototyping, Apple design, Swift, mobile web, and Sonner. This is a skills-only plugin; the upstream project does not include an MCP server.",
+    "developerName": "Personal bundle / Emil Kowalski skills",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Use emil-design-eng to improve this interface.",
+      "Use animate to build a polished transition.",
+      "Use review-animations to review my motion code."
+    ],
+    "websiteURL": "https://emilkowal.ski/skill"
+  },
+  "homepage": "https://emilkowal.ski/skill",
+  "repository": "https://github.com/emilkowalski/skills",
+  "license": "MIT",
+  "keywords": [
+    "design",
+    "animation",
+    "ui",
+    "emil-kowalski"
+  ]
+}

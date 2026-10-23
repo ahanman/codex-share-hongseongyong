@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/Leonxlnx/taste-skill",
+  "commit": "5217fb45be2c0b302f29c9cd31cbd3237501c684",
+  "skills_modified": false,
+  "notes": "Contains the upstream default v2 experimental skill and the separately named v1 compatibility skill. Individual skills are selected according to the task. The optional Stitch-specific skill does not install or connect Google Stitch."
+}

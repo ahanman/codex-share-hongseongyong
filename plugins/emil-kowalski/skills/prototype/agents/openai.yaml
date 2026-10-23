@@ -1,0 +1,5 @@
+interface:
+  display_name: "Prototype"
+  short_description: "Explore distinct UI variants with a visual picker."
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,42 @@
+# Reference template only. Do not replace the receiver's config.toml with this file.
+# scripts/install-mcp.ps1 adds only missing entries with target-machine paths.
+# node_repl is managed by the target Codex installation and is intentionally omitted.
+
+[mcp_servers.higgsfield]
+url = "https://mcp.higgsfield.ai/mcp"
+enabled = true
+
+[mcp_servers.elevenlabs]
+url = "https://api.us.elevenlabs.io/v1/mcp"
+enabled = true
+
+[mcp_servers.runway]
+url = "https://mcp.runwayml.com/mcp"
+enabled = true
+
+[mcp_servers.artlist]
+url = "https://mcp.artlist.io/mcp"
+enabled = true
+
+[mcp_servers.seedance-direct]
+command = '<MCP_INSTALL_ROOT>\seedance-direct\ark-mcp\.venv\Scripts\python.exe'
+args = ['<MCP_INSTALL_ROOT>\seedance-direct\launch.py']
+enabled = true
+
+[mcp_servers.sync]
+command = '<NODE_EXE>'
+args = ['<MCP_INSTALL_ROOT>\npm-mcp\node_modules\@sync.so\mcp-server\dist\cli.js', '--transport', 'stdio']
+enabled = true
+
+[mcp_servers.rea]
+command = '<NODE_EXE>'
+args = ['<MCP_INSTALL_ROOT>\npm-mcp\node_modules\rea-agents\scripts\rea.mjs', 'mcp']
+startup_timeout_sec = 30
+tool_timeout_sec = 450
+enabled = true
+
+# Optional: replace with receiver-owned paths only after installing native analysis tools.
+# [mcp_servers.rea.env]
+# GHIDRA_INSTALL_DIR = '<GHIDRA_INSTALL_DIR>'
+# JAVA_HOME = '<JDK_HOME>'
+# REA_ANALYSIS_PROVIDER = 'ghidra'

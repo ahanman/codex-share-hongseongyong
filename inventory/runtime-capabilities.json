@@ -1,0 +1,33 @@
+{
+  "snapshot_date": "2026-10-23",
+  "timezone": "Asia/Seoul",
+  "source": "Available tool metadata in the original Codex session; this is an exposure snapshot, not an installation/entitlement list.",
+  "namespaces": {
+    "mcp__artifact_session__": 3,
+    "mcp__blender__": 32,
+    "mcp__code_review__": 1,
+    "mcp__codex_app__": 47,
+    "mcp__codex_apps__": 396,
+    "mcp__higgsfield__": 149,
+    "mcp__node_repl__": 3,
+    "mcp__playwright__": 25,
+    "mcp__rea__": 207,
+    "mcp__seedance_direct__": 17,
+    "mcp__sync__": 58
+  },
+  "cloud_app_names": [
+    "GitHub",
+    "Figma",
+    "Higgsfield",
+    "Runway",
+    "Sites",
+    "ChatGPT Space",
+    "Plugin Management",
+    "Codex Document Control",
+    "Pets",
+    "Safety Settings",
+    "Hotline",
+    "Search Service"
+  ],
+  "note": "Built-in services require the recipient's Codex client/account. Tool implementations and credentials are not exported. Installed plugin status is recorded separately in plugins.json."
+}

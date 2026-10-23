@@ -1,0 +1,21 @@
+# Never commit account state or runtime caches.
+.env
+.env.*
+!.env.example
+auth.json
+credentials.json
+*.pem
+*.key
+*.pfx
+*.sqlite*
+*.log
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+test-output/
+local/
+*.bak
+

@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "blender": {
+      "args": [
+        "--python",
+        "3.12",
+        "mcp-for-blender==2.0.3"
+      ],
+      "startup_timeout_sec": 60,
+      "env": {
+        "BLENDER_PORT": "9876",
+        "BLENDER_HOST": "127.0.0.1",
+        "BLENDER_MCP_SAFE_MODE": "1",
+        "BLENDER_MCP_DISABLE_TELEMETRY": "1"
+      },
+      "command": "uvx"
+    }
+  }
+}

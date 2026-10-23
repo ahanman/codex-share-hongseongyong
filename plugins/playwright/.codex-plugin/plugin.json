@@ -1,0 +1,20 @@
+{
+  "name": "playwright",
+  "version": "0.1.0",
+  "description": "Personal Codex integration for the official Microsoft Playwright MCP server.",
+  "author": {
+    "name": "Personal integration (Microsoft Playwright MCP)"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Playwright MCP",
+    "shortDescription": "Browser automation with Microsoft Playwright MCP.",
+    "longDescription": "A personal Codex plugin connecting the official Microsoft Playwright MCP server over local stdio, with a concise browser automation skill. Uses the installed Chrome browser in headless mode.",
+    "developerName": "Personal integration",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://github.com/microsoft/playwright-mcp",
+    "defaultPrompt": ["Use Playwright to check my website.", "Test the main user flow in my local app."]
+  },
+  "mcpServers": "./.mcp.json"
+}

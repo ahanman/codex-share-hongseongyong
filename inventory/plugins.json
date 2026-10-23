@@ -1,0 +1,878 @@
+{
+  "schemaVersion": 1,
+  "capturedDate": "2026-10-23",
+  "counts": {
+    "cachedPlugins": 30,
+    "installedPlugins": 28,
+    "cacheOnlyPlugins": 2,
+    "includedPersonalPlugins": 6,
+    "includedPluginSkills": 30,
+    "installedAppPlugins": 10,
+    "cacheOnlyAppPlugins": 2
+  },
+  "notes": [
+    "Installed/enabled comes from codex plugin list --json; cached files alone do not establish installation.",
+    "Google Calendar and Slack have cached manifests but were absent from installed CLI results.",
+    "App IDs identify integrations, not portable account connections. Each receiving user must authenticate independently.",
+    "Official bundled, runtime, and remote plugin payloads are inventory-only; use the receiving Codex catalog/runtime to obtain them."
+  ],
+  "plugins": [
+    {
+      "pluginId": "elevenlabs@elevenlabs",
+      "name": "elevenlabs",
+      "displayName": "ElevenLabs",
+      "version": "0.4.0",
+      "marketplace": "elevenlabs",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "git",
+      "repository": "https://github.com/elevenlabs/plugin",
+      "homepage": "https://elevenlabs.io",
+      "license": "MIT",
+      "upstreamRef": "c7eef3cbcf1ff3ef12066a4e8ea964749d8e94be",
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 42,
+      "hasMcpManifest": true,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "elevenlabs@elevenlabs",
+        "requiresOwnAccount": true,
+        "strategy": "add upstream Git marketplace, then install"
+      }
+    },
+    {
+      "pluginId": "impeccable@personal",
+      "name": "impeccable",
+      "displayName": "Impeccable",
+      "version": "4.3.1",
+      "marketplace": "personal",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "shared-personal-plugin",
+      "repository": "https://github.com/pbakaus/impeccable",
+      "homepage": "https://impeccable.style",
+      "license": "Apache-2.0",
+      "upstreamRef": "83c2c735777c68e30ea536ab9cc97f7843456945",
+      "payloadIncluded": true,
+      "exportPath": "plugins/impeccable",
+      "skillCount": 1,
+      "hasMcpManifest": false,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "impeccable@hong-codex-share",
+        "requiresOwnAccount": false,
+        "strategy": "install from this repository marketplace"
+      }
+    },
+    {
+      "pluginId": "google-flow@personal",
+      "name": "google-flow",
+      "displayName": "Google Flow (Browser)",
+      "version": "0.1.0",
+      "marketplace": "personal",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "shared-personal-plugin",
+      "repository": null,
+      "homepage": null,
+      "license": null,
+      "upstreamRef": null,
+      "payloadIncluded": true,
+      "exportPath": "plugins/google-flow",
+      "skillCount": 1,
+      "hasMcpManifest": false,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "google-flow@hong-codex-share",
+        "requiresOwnAccount": false,
+        "strategy": "install from this repository marketplace"
+      }
+    },
+    {
+      "pluginId": "emil-kowalski@personal",
+      "name": "emil-kowalski",
+      "displayName": "Emil Kowalski Design Skills",
+      "version": "0.1.0",
+      "marketplace": "personal",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "shared-personal-plugin",
+      "repository": "https://github.com/emilkowalski/skills",
+      "homepage": "https://emilkowal.ski/skill",
+      "license": "MIT",
+      "upstreamRef": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
+      "payloadIncluded": true,
+      "exportPath": "plugins/emil-kowalski",
+      "skillCount": 13,
+      "hasMcpManifest": false,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "emil-kowalski@hong-codex-share",
+        "requiresOwnAccount": false,
+        "strategy": "install from this repository marketplace"
+      }
+    },
+    {
+      "pluginId": "blender@personal",
+      "name": "blender",
+      "displayName": "Blender",
+      "version": "0.1.0",
+      "marketplace": "personal",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "shared-personal-plugin",
+      "repository": "https://github.com/ahujasid/mcp-for-blender",
+      "homepage": "https://github.com/ahujasid/mcp-for-blender",
+      "license": "MIT",
+      "upstreamRef": "7cc602252386b92829bc7364e3a897253610be38",
+      "payloadIncluded": true,
+      "exportPath": "plugins/blender",
+      "skillCount": 1,
+      "hasMcpManifest": true,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "blender@hong-codex-share",
+        "requiresOwnAccount": false,
+        "strategy": "install from this repository marketplace"
+      }
+    },
+    {
+      "pluginId": "template-creator@openai-primary-runtime",
+      "name": "template-creator",
+      "displayName": "Template Creator",
+      "version": "26.1017.22136",
+      "marketplace": "openai-primary-runtime",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "desktop-managed",
+      "repository": "https://github.com/openai/openai",
+      "homepage": "https://openai.com/",
+      "license": "Proprietary",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 1,
+      "hasMcpManifest": false,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "template-creator@openai-primary-runtime",
+        "requiresOwnAccount": false,
+        "strategy": "use Codex Desktop-managed marketplace when available"
+      }
+    },
+    {
+      "pluginId": "spreadsheets@openai-primary-runtime",
+      "name": "spreadsheets",
+      "displayName": "Spreadsheets",
+      "version": "26.1017.22136",
+      "marketplace": "openai-primary-runtime",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "desktop-managed",
+      "repository": "https://github.com/openai/openai",
+      "homepage": "https://openai.com/",
+      "license": "MIT",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 2,
+      "hasMcpManifest": false,
+      "appBindings": [
+        {
+          "name": "connected_documents",
+          "id": "connector_openai_codex_document_control",
+          "required": false
+        }
+      ],
+      "reinstall": {
+        "selector": "spreadsheets@openai-primary-runtime",
+        "requiresOwnAccount": true,
+        "strategy": "use Codex Desktop-managed marketplace when available"
+      }
+    },
+    {
+      "pluginId": "presentations@openai-primary-runtime",
+      "name": "presentations",
+      "displayName": "Presentations",
+      "version": "26.1017.22136",
+      "marketplace": "openai-primary-runtime",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "desktop-managed",
+      "repository": "https://github.com/openai/openai",
+      "homepage": "https://openai.com/",
+      "license": "MIT",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 1,
+      "hasMcpManifest": false,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "presentations@openai-primary-runtime",
+        "requiresOwnAccount": false,
+        "strategy": "use Codex Desktop-managed marketplace when available"
+      }
+    },
+    {
+      "pluginId": "pdf@openai-primary-runtime",
+      "name": "pdf",
+      "displayName": "PDF",
+      "version": "26.1017.22136",
+      "marketplace": "openai-primary-runtime",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "desktop-managed",
+      "repository": "https://github.com/openai/openai",
+      "homepage": "https://openai.com/",
+      "license": "MIT",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 1,
+      "hasMcpManifest": false,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "pdf@openai-primary-runtime",
+        "requiresOwnAccount": false,
+        "strategy": "use Codex Desktop-managed marketplace when available"
+      }
+    },
+    {
+      "pluginId": "documents@openai-primary-runtime",
+      "name": "documents",
+      "displayName": "Documents",
+      "version": "26.1017.22136",
+      "marketplace": "openai-primary-runtime",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "desktop-managed",
+      "repository": "https://github.com/openai/openai",
+      "homepage": "https://openai.com/",
+      "license": "MIT",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 1,
+      "hasMcpManifest": false,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "documents@openai-primary-runtime",
+        "requiresOwnAccount": false,
+        "strategy": "use Codex Desktop-managed marketplace when available"
+      }
+    },
+    {
+      "pluginId": "work-pets@openai-curated-remote",
+      "name": "work-pets",
+      "displayName": "Pets",
+      "version": "0.1.6",
+      "marketplace": "openai-curated-remote",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "account-remote-plugin",
+      "repository": "https://github.com/openai/openai/tree/master/chatgpt/oai-maintained-plugins/plugins/pets",
+      "homepage": "https://openai.com/",
+      "license": "Proprietary",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 3,
+      "hasMcpManifest": false,
+      "appBindings": [
+        {
+          "name": "chatgpt_pets",
+          "id": "connector_openai_chatgpt_pets",
+          "required": true
+        }
+      ],
+      "reinstall": {
+        "selector": "work-pets@openai-curated-remote",
+        "requiresOwnAccount": true,
+        "strategy": "use receiving account plugin catalog; availability and sign-in may differ"
+      }
+    },
+    {
+      "pluginId": "sites@openai-curated-remote",
+      "name": "sites",
+      "displayName": "Sites",
+      "version": "1.1.1",
+      "marketplace": "openai-curated-remote",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "account-remote-plugin",
+      "repository": null,
+      "homepage": "https://openai.com/",
+      "license": "Proprietary",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 2,
+      "hasMcpManifest": false,
+      "appBindings": [
+        {
+          "name": "sites",
+          "id": "connector_20205bf7d4e99a89d7154bb849718324",
+          "required": true
+        }
+      ],
+      "reinstall": {
+        "selector": "sites@openai-curated-remote",
+        "requiresOwnAccount": true,
+        "strategy": "use receiving account plugin catalog; availability and sign-in may differ"
+      }
+    },
+    {
+      "pluginId": "plugin-management@openai-curated-remote",
+      "name": "plugin-management",
+      "displayName": "Plugin Management",
+      "version": "0.1.0",
+      "marketplace": "openai-curated-remote",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "account-remote-plugin",
+      "repository": "https://github.com/openai/openai/tree/master/chatgpt/oai-maintained-plugins/plugins/plugin-management",
+      "homepage": "https://openai.com/",
+      "license": "Proprietary",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 1,
+      "hasMcpManifest": false,
+      "appBindings": [
+        {
+          "name": "plugin_management",
+          "id": "connector_openai_plugin_management",
+          "required": true
+        }
+      ],
+      "reinstall": {
+        "selector": "plugin-management@openai-curated-remote",
+        "requiresOwnAccount": true,
+        "strategy": "use receiving account plugin catalog; availability and sign-in may differ"
+      }
+    },
+    {
+      "pluginId": "pages@openai-curated-remote",
+      "name": "pages",
+      "displayName": "Pages",
+      "version": "0.1.25",
+      "marketplace": "openai-curated-remote",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "account-remote-plugin",
+      "repository": null,
+      "homepage": null,
+      "license": "Proprietary",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 4,
+      "hasMcpManifest": false,
+      "appBindings": [
+        {
+          "name": "pages",
+          "id": "connector_openai_pages",
+          "required": true
+        }
+      ],
+      "reinstall": {
+        "selector": "pages@openai-curated-remote",
+        "requiresOwnAccount": true,
+        "strategy": "use receiving account plugin catalog; availability and sign-in may differ"
+      }
+    },
+    {
+      "pluginId": "openai-templates@openai-curated-remote",
+      "name": "openai-templates",
+      "displayName": "Default templates",
+      "version": "0.1.1",
+      "marketplace": "openai-curated-remote",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "account-remote-plugin",
+      "repository": "https://github.com/openai/oai-maintained-plugins/tree/main/plugins/openai-templates",
+      "homepage": "https://github.com/openai/oai-maintained-plugins/tree/main/plugins/openai-templates",
+      "license": "Proprietary",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 20,
+      "hasMcpManifest": false,
+      "appBindings": [
+        {
+          "name": "default_templates",
+          "id": "connector_openai_default_templates",
+          "required": true
+        }
+      ],
+      "reinstall": {
+        "selector": "openai-templates@openai-curated-remote",
+        "requiresOwnAccount": true,
+        "strategy": "use receiving account plugin catalog; availability and sign-in may differ"
+      }
+    },
+    {
+      "pluginId": "github@openai-curated-remote",
+      "name": "github",
+      "displayName": "GitHub",
+      "version": "0.1.12-5f7cd798dc99",
+      "marketplace": "openai-curated-remote",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "account-remote-plugin",
+      "repository": "https://github.com/openai/plugins",
+      "homepage": "https://github.com/",
+      "license": "MIT",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 0,
+      "hasMcpManifest": false,
+      "appBindings": [
+        {
+          "name": "github",
+          "id": "connector_76869538009648d5b282a4bb21c3d157",
+          "required": false
+        }
+      ],
+      "reinstall": {
+        "selector": "github@openai-curated-remote",
+        "requiresOwnAccount": true,
+        "strategy": "use receiving account plugin catalog; availability and sign-in may differ"
+      }
+    },
+    {
+      "pluginId": "figma@openai-curated-remote",
+      "name": "figma",
+      "displayName": "Figma",
+      "version": "16.0.0",
+      "marketplace": "openai-curated-remote",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "account-remote-plugin",
+      "repository": null,
+      "homepage": null,
+      "license": null,
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 16,
+      "hasMcpManifest": true,
+      "appBindings": [
+        {
+          "name": "figma",
+          "id": "asdk_app_68df038e0ba48191908c8434991bbac2",
+          "required": false
+        },
+        {
+          "name": "figma_runtime",
+          "id": "connector_68df038e0ba48191908c8434991bbac2",
+          "required": false
+        }
+      ],
+      "reinstall": {
+        "selector": "figma@openai-curated-remote",
+        "requiresOwnAccount": true,
+        "strategy": "use receiving account plugin catalog; availability and sign-in may differ"
+      }
+    },
+    {
+      "pluginId": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "name": "app-6a3293e129088191abf0875820e839da",
+      "displayName": "Higgsfield",
+      "version": "2.2.1",
+      "marketplace": "openai-curated-remote",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "account-remote-plugin",
+      "repository": null,
+      "homepage": null,
+      "license": null,
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 2,
+      "hasMcpManifest": true,
+      "appBindings": [
+        {
+          "name": "higgsfield",
+          "id": "asdk_app_6a3293e129088191abf0875820e839da",
+          "required": true
+        }
+      ],
+      "reinstall": {
+        "selector": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+        "requiresOwnAccount": true,
+        "strategy": "use receiving account plugin catalog; availability and sign-in may differ"
+      }
+    },
+    {
+      "pluginId": "app-6a05e3b201788191be12b590b43e6ce3@openai-curated-remote",
+      "name": "app-6a05e3b201788191be12b590b43e6ce3",
+      "displayName": "Runway",
+      "version": "1.3.1",
+      "marketplace": "openai-curated-remote",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "account-remote-plugin",
+      "repository": null,
+      "homepage": null,
+      "license": null,
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 0,
+      "hasMcpManifest": false,
+      "appBindings": [
+        {
+          "name": "app-6a05e3b201788191be12b590b43e6ce3",
+          "id": "asdk_app_6a05e3b201788191be12b590b43e6ce3",
+          "required": true
+        }
+      ],
+      "reinstall": {
+        "selector": "app-6a05e3b201788191be12b590b43e6ce3@openai-curated-remote",
+        "requiresOwnAccount": true,
+        "strategy": "use receiving account plugin catalog; availability and sign-in may differ"
+      }
+    },
+    {
+      "pluginId": "slack@openai-curated",
+      "name": "slack",
+      "displayName": "Slack",
+      "version": "0.1.7",
+      "marketplace": "openai-curated",
+      "installed": false,
+      "enabled": false,
+      "cached": true,
+      "cacheOnly": true,
+      "sourceType": "cached-catalog-plugin",
+      "repository": "https://github.com/openai/plugins",
+      "homepage": "https://slack.com/",
+      "license": "MIT",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 0,
+      "hasMcpManifest": false,
+      "appBindings": [
+        {
+          "name": "slack",
+          "id": "asdk_app_69a1d78e929881919bba0dbda1f6436d",
+          "required": false
+        }
+      ],
+      "reinstall": {
+        "selector": "slack@openai-curated",
+        "requiresOwnAccount": true,
+        "strategy": "historical cache only; install current catalog equivalent if needed"
+      }
+    },
+    {
+      "pluginId": "google-calendar@openai-curated",
+      "name": "google-calendar",
+      "displayName": "Google Calendar",
+      "version": "1.2.6",
+      "marketplace": "openai-curated",
+      "installed": false,
+      "enabled": false,
+      "cached": true,
+      "cacheOnly": true,
+      "sourceType": "cached-catalog-plugin",
+      "repository": "https://github.com/openai/plugins",
+      "homepage": "https://workspace.google.com/products/calendar/",
+      "license": "MIT",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 0,
+      "hasMcpManifest": false,
+      "appBindings": [
+        {
+          "name": "google-calendar",
+          "id": "connector_947e0d954944416db111db556030eea6",
+          "required": false
+        }
+      ],
+      "reinstall": {
+        "selector": "google-calendar@openai-curated",
+        "requiresOwnAccount": true,
+        "strategy": "historical cache only; install current catalog equivalent if needed"
+      }
+    },
+    {
+      "pluginId": "visualize@openai-bundled",
+      "name": "visualize",
+      "displayName": "Visualize",
+      "version": "1.0.55",
+      "marketplace": "openai-bundled",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "desktop-managed",
+      "repository": null,
+      "homepage": "https://openai.com/",
+      "license": "Proprietary",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 1,
+      "hasMcpManifest": false,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "visualize@openai-bundled",
+        "requiresOwnAccount": false,
+        "strategy": "use Codex Desktop-managed marketplace when available"
+      }
+    },
+    {
+      "pluginId": "unified-computer-use@openai-bundled",
+      "name": "unified-computer-use",
+      "displayName": null,
+      "version": "26.1016.51333",
+      "marketplace": "openai-bundled",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "desktop-managed",
+      "repository": null,
+      "homepage": null,
+      "license": null,
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 0,
+      "hasMcpManifest": true,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "unified-computer-use@openai-bundled",
+        "requiresOwnAccount": false,
+        "strategy": "use Codex Desktop-managed marketplace when available"
+      }
+    },
+    {
+      "pluginId": "computer-use@openai-bundled",
+      "name": "computer-use",
+      "displayName": "Computer Use",
+      "version": "26.1016.51333",
+      "marketplace": "openai-bundled",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "desktop-managed",
+      "repository": "https://github.com/openai/openai/tree/master/project/cua/sky_js/plugin",
+      "homepage": "https://github.com/openai/openai/tree/master/project/cua/sky_js/plugin",
+      "license": "Proprietary",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 1,
+      "hasMcpManifest": false,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "computer-use@openai-bundled",
+        "requiresOwnAccount": false,
+        "strategy": "use Codex Desktop-managed marketplace when available"
+      }
+    },
+    {
+      "pluginId": "codex-app-tools@openai-bundled",
+      "name": "codex-app-tools",
+      "displayName": null,
+      "version": "0.1.6",
+      "marketplace": "openai-bundled",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "desktop-managed",
+      "repository": null,
+      "homepage": null,
+      "license": "Proprietary",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 0,
+      "hasMcpManifest": true,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "codex-app-tools@openai-bundled",
+        "requiresOwnAccount": false,
+        "strategy": "use Codex Desktop-managed marketplace when available"
+      }
+    },
+    {
+      "pluginId": "code-review@openai-bundled",
+      "name": "code-review",
+      "displayName": "Code Review",
+      "version": "26.1016.51333",
+      "marketplace": "openai-bundled",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "desktop-managed",
+      "repository": "https://github.com/openai/openai/tree/master/plugins/pull-requests",
+      "homepage": "https://github.com/openai/openai/tree/master/plugins/pull-requests",
+      "license": "Proprietary",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 0,
+      "hasMcpManifest": true,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "code-review@openai-bundled",
+        "requiresOwnAccount": false,
+        "strategy": "use Codex Desktop-managed marketplace when available"
+      }
+    },
+    {
+      "pluginId": "chrome@openai-bundled",
+      "name": "chrome",
+      "displayName": "Chrome",
+      "version": "26.1016.51333",
+      "marketplace": "openai-bundled",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "desktop-managed",
+      "repository": "https://github.com/openai/openai/tree/master/lib/oai_browser_use/plugin",
+      "homepage": "https://github.com/openai/openai/tree/master/lib/oai_browser_use/plugin",
+      "license": "Proprietary",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 0,
+      "hasMcpManifest": false,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "chrome@openai-bundled",
+        "requiresOwnAccount": false,
+        "strategy": "use Codex Desktop-managed marketplace when available"
+      }
+    },
+    {
+      "pluginId": "browser@openai-bundled",
+      "name": "browser",
+      "displayName": "Browser",
+      "version": "26.1016.51333",
+      "marketplace": "openai-bundled",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "desktop-managed",
+      "repository": "https://github.com/openai/openai/tree/master/lib/oai_browser_use/plugin",
+      "homepage": "https://github.com/openai/openai/tree/master/lib/oai_browser_use/plugin",
+      "license": "Proprietary",
+      "upstreamRef": null,
+      "payloadIncluded": false,
+      "exportPath": null,
+      "skillCount": 0,
+      "hasMcpManifest": false,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "browser@openai-bundled",
+        "requiresOwnAccount": false,
+        "strategy": "use Codex Desktop-managed marketplace when available"
+      }
+    },
+    {
+      "pluginId": "playwright@personal",
+      "name": "playwright",
+      "displayName": "Playwright MCP",
+      "version": "0.1.0",
+      "marketplace": "personal",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "shared-personal-plugin",
+      "repository": "https://github.com/microsoft/playwright-mcp",
+      "homepage": null,
+      "license": null,
+      "upstreamRef": null,
+      "payloadIncluded": true,
+      "exportPath": "plugins/playwright",
+      "skillCount": 1,
+      "hasMcpManifest": true,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "playwright@hong-codex-share",
+        "requiresOwnAccount": false,
+        "strategy": "install from this repository marketplace"
+      }
+    },
+    {
+      "pluginId": "taste-skill@personal",
+      "name": "taste-skill",
+      "displayName": "Taste Skills",
+      "version": "1.0.0",
+      "marketplace": "personal",
+      "installed": true,
+      "enabled": true,
+      "cached": true,
+      "cacheOnly": false,
+      "sourceType": "shared-personal-plugin",
+      "repository": "https://github.com/Leonxlnx/taste-skill",
+      "homepage": "https://www.tasteskill.dev",
+      "license": "MIT",
+      "upstreamRef": "5217fb45be2c0b302f29c9cd31cbd3237501c684",
+      "payloadIncluded": true,
+      "exportPath": "plugins/taste-skill",
+      "skillCount": 13,
+      "hasMcpManifest": false,
+      "appBindings": [],
+      "reinstall": {
+        "selector": "taste-skill@hong-codex-share",
+        "requiresOwnAccount": false,
+        "strategy": "install from this repository marketplace"
+      }
+    }
+  ]
+}

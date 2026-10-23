@@ -1,0 +1,32 @@
+{
+  "name": "blender",
+  "version": "0.1.0",
+  "description": "Personal Blender workflow using the community MCP for Blender server.",
+  "author": {
+    "name": "Local personal plugin"
+  },
+  "homepage": "https://github.com/ahujasid/mcp-for-blender",
+  "license": "MIT",
+  "keywords": [
+    "blender",
+    "3d",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Blender",
+    "shortDescription": "Control local Blender scenes through MCP.",
+    "longDescription": "Personal plugin for Blender 5.2 LTS with the community MCP for Blender server. This integration is not made by Blender. Localhost connection; telemetry and optional remote asset services disabled by default.",
+    "developerName": "Local personal plugin; MCP by Siddharth Ahuja",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Inspect the current Blender scene.",
+      "Build a simple 3D scene in Blender."
+    ]
+  }
+}

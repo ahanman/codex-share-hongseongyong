@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/emilkowalski/skills",
+  "commit": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
+  "skills_modified": true,
+  "adaptations": {
+    "skills": [
+      "pick-ui-library",
+      "prototype",
+      "review-animations"
+    ],
+    "change": "Moved disable-model-invocation: true to agents/openai.yaml policy.allow_implicit_invocation: false. Skill instruction bodies are unchanged."
+  }
+}

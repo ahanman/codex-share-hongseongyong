@@ -1,0 +1,31 @@
+{
+  "name": "impeccable",
+  "version": "4.3.1",
+  "description": "Personal Codex bundle of the official Impeccable design skill and its 24 commands.",
+  "author": {
+    "name": "Personal bundle; upstream by Paul Bakaus"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Impeccable",
+    "shortDescription": "Design, audit, and polish interfaces with Impeccable.",
+    "longDescription": "Personal Codex bundle of the official Impeccable design skill and its 24 commands. Includes the official Codex skill, command references, nested agent definitions, and Windows engine launcher. Automatic project hooks are not configured by this personal skills plugin. This local wrapper is not an official published Codex plugin. The upstream distribution does not include an MCP server.",
+    "developerName": "Personal bundle / Paul Bakaus",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Use $impeccable to audit this interface.",
+      "Use $impeccable to polish the current UI."
+    ],
+    "websiteURL": "https://impeccable.style"
+  },
+  "homepage": "https://impeccable.style",
+  "repository": "https://github.com/pbakaus/impeccable",
+  "license": "Apache-2.0",
+  "keywords": [
+    "design",
+    "frontend",
+    "ui",
+    "impeccable"
+  ]
+}

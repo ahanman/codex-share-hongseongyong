@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "exportedOn": "2026-10-23",
+  "credentialsIncluded": false,
+  "servers": [
+    {"name":"node_repl","enabled":true,"kind":"codex-builtin","installation":"Target Codex manages its own runtime, pipes and identity. Do not import the source machine configuration."},
+    {"name":"higgsfield","enabled":true,"kind":"remote","url":"https://mcp.higgsfield.ai/mcp","authentication":"Receiver authenticates with own account."},
+    {"name":"elevenlabs","enabled":true,"kind":"remote","url":"https://api.us.elevenlabs.io/v1/mcp","authentication":"Receiver authenticates with own account."},
+    {"name":"runway","enabled":true,"kind":"remote","url":"https://mcp.runwayml.com/mcp","authentication":"Receiver authenticates with own account."},
+    {"name":"seedance-direct","enabled":true,"kind":"local-python","upstream":"https://github.com/byteplus-sa/ark-mcp.git","commit":"be4f495bcabeb51ecd3f4221f026feca698a416f","license":"MIT (upstream)","python":">=3.12","extraDependency":"keyring==25.7.0","credentialEnvironmentVariables":["BYTEPLUS_MODELARK_API_KEY","BYTEPLUS_SEED_SPEECH_API_KEY","BYTEPLUS_VOD_MEDIAKIT_API_KEY"],"authentication":"Receiver supplies own API keys; launcher reads OS keyring or inherited environment."},
+    {"name":"sync","enabled":true,"kind":"local-node","package":"@sync.so/mcp-server","version":"0.1.4","upstream":"https://github.com/synchronicity-labs/mcp-server.git","license":"MIT","node":">=18.0.0","credentialEnvironmentVariables":["SYNC_API_KEY"],"optionalEnvironmentVariables":["SYNC_BASE_URL"],"authentication":"Receiver device login on first launch, or own API key. Never copy ~/.config/sync/mcp-credentials.json."},
+    {"name":"artlist","enabled":true,"kind":"remote","url":"https://mcp.artlist.io/mcp","authentication":"Receiver authenticates with own account."},
+    {"name":"rea","enabled":true,"kind":"local-node","package":"rea-agents","version":"6.7.0","upstream":"https://github.com/morluto/rea.git","license":"MIT","node":"^22.19.0 || ^24.11.0 || >=26.0.0","optionalEnvironmentVariables":["GHIDRA_INSTALL_DIR","JAVA_HOME","REA_ANALYSIS_PROVIDER"],"nativeDependencies":"Ghidra and its supported JDK are installed separately by receiver."}
+  ],
+  "excluded": ["OAuth access and refresh tokens","API keys","OS credential vault entries","machine-bound Codex runtime configuration","Python virtual environments","node_modules","generated media and task history"]
+}

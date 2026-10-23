@@ -1,0 +1,11 @@
+{
+  "integration_type": "community; not made by Blender",
+  "repository": "https://github.com/ahujasid/mcp-for-blender",
+  "reviewed_commit": "7cc602252386b92829bc7364e3a897253610be38",
+  "package": "mcp-for-blender",
+  "version": "2.0.3",
+  "blender_version": "5.2.2 LTS",
+  "blender_download": "https://download.blender.org/release/Blender5.2/blender-5.2.2-windows-x64.zip",
+  "blender_sha256": "3849d17a682cba006075aaa3f3597ecb5c9c30ec31035b2e092c53e40679b535",
+  "skill_origin": "Local instructions authored for this installation; no upstream skill copied"
+}

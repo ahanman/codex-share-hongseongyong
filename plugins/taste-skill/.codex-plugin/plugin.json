@@ -1,0 +1,32 @@
+{
+  "name": "taste-skill",
+  "version": "1.0.0",
+  "description": "Personal Codex bundle of the 13 official Taste frontend design and image-reference skills.",
+  "author": {
+    "name": "Personal bundle; upstream by Leonxlnx"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Taste Skills",
+    "shortDescription": "Build distinctive interfaces and design references.",
+    "longDescription": "Personal Codex bundle of the 13 official Taste frontend design and image-reference skills. Contains the upstream default v2 experimental skill and the separately named v1 compatibility skill. Individual skills are selected according to the task. The optional Stitch-specific skill does not install or connect Google Stitch. This local wrapper is not an official published Codex plugin. The upstream distribution does not include an MCP server.",
+    "developerName": "Personal bundle / Leonxlnx",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Use $design-taste-frontend to design this page.",
+      "Use $gpt-taste to improve this frontend.",
+      "Use $redesign-existing-projects to review this UI."
+    ],
+    "websiteURL": "https://www.tasteskill.dev"
+  },
+  "homepage": "https://www.tasteskill.dev",
+  "repository": "https://github.com/Leonxlnx/taste-skill",
+  "license": "MIT",
+  "keywords": [
+    "design",
+    "frontend",
+    "ui",
+    "taste-skill"
+  ]
+}

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Pick UI Library"
+  short_description: "Choose UI libraries from Emil Kowalski's curated list."
+policy:
+  allow_implicit_invocation: false

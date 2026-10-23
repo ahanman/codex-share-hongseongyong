@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/pbakaus/impeccable",
+  "commit": "83c2c735777c68e30ea536ab9cc97f7843456945",
+  "skills_modified": false,
+  "notes": "Includes the official Codex skill, command references, nested agent definitions, and Windows engine launcher. Automatic project hooks are not configured by this personal skills plugin."
+}
