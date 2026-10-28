@@ -1,5 +1,14 @@
 # 스킬 설치
 
+처음 설치하는 분은 [설치·사용 안내](START-HERE.ko.md)를, 이름과 용도를 찾는 분은 [전체 293개 목록](SKILL-CATALOG.md)을 참고하세요. 2026-10-28에 현재 설치본과 이 저장소의 591개 파일이 모두 같은지 다시 확인했습니다.
+
+Mac·Linux 또는 Python을 사용하는 Windows에서는 저장소 폴더에서 아래 명령을 실행할 수 있습니다. Python 3.9 이상과 표준 라이브러리만 사용합니다. 기본 설치 경로는 `~/.agents/skills`이며 기존 스킬은 건너뜁니다. `--target-root`로 경로를 지정하거나 `--skill react-patterns`로 하나만 선택할 수 있습니다.
+
+```bash
+python3 scripts/install-skills.py --dry-run
+python3 scripts/install-skills.py
+```
+
 사용자 스킬 293개를 포함합니다. `skills/codex/`에는 292개, `skills/agents/`에는 `reverse-engineer-anything` 1개가 있습니다. 각 스킬의 설명, 스크립트, 참조 자료, 자산을 함께 보존했습니다. 플러그인이 제공하는 스킬은 플러그인 설치 안내를 따라 설치합니다.
 
 저장소 루트의 PowerShell에서 먼저 설치 내용을 확인합니다.
